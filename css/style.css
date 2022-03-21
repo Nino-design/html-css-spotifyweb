@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    display: flex;
+
+}
+
+.sidebar{
+    width: 160px;
+    border: 1px solid white;
+}
+
+.logo{
+    height: 80px;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 80px;
+    width: 100%;
+    overflow:visible;
+    background-color: blue;
+}
+
+
+.main-content{
+    width: 100%;
+    height: calc(100vh -160px);
+    background-color: rgb(46, 43, 43);
+    overflow-y: auto;
+}
+
+.music-section{
+    width: 97%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+}
+
+
+.navbar ul{
+    display: flex;
+    align-content: space-around;
+}
+
+.artists{
+    background-color: aqua;
+}
+
+.article{
+    width: calc(100% / 6 - 1rem);
+    margin: .5rem;
+}
+
+.article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    height: 80px;
+    background-color: brown;
+}
