@@ -10,25 +10,15 @@ html{
 
 
 .font-small-grey{
-    font-size: 0.8em;
+    font-size: 0.7em;
     color:rgba(163,163,163,255);
 }
 
 .font-small-white{
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: rgba(254,254,254,255)
 }
 
-.font-big-grey{
-    font-size: 1.5em;
-    color: rgba(163,163,163,255);
-}
-
-.font-big-white{
-    font-size: 1.5em;
-    color:rgba(254,254,254,255);
-    
-}
 
 .clearfix::after{
     content: "";
@@ -55,31 +45,28 @@ main{
     width: 200px;
     height: 100%;
     float: left;
-    background-color: blueviolet;
+    background-color: black;
 }
 
+.sidebar svg{
+    color: rgba(163,163,163,255);
+}
 
 .side-top{
     height: calc(100% - 60px);
     min-height: 250px;
     display: flex;
     flex-direction: column;
-    background-color: chartreuse;
+    
 }
 
-
-.logo{
-    background-color: crimson;
-}
 
 .logo img{
     width: 150px;
-    
     padding: 10px;
 }
 
 .main-buttons{
-    background-color: darkgoldenrod;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
@@ -103,7 +90,6 @@ main{
 }
 
 .playlist{
-    background-color: beige;
     height: calc(100% - 230px);
     overflow-y: hidden;
     margin-top: 15px;
@@ -119,28 +105,53 @@ main{
 
 .playlist h3{
     margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
 }
+
 
 .playlist-logo{
     margin-bottom: 5px;
+    color: rgba(163,163,163,255);
+}
+
+.playlist-logo i{
+    border: 1px solid transparent;
+    color: black;
+    background-color: rgba(163,163,163,255);
+    padding: 6px;
+    margin-right: 10px;
+    
 }
 
 .side-bottom{
     height: 60px;
-    background-color: coral;
-    margin-left: 10px;
+    margin: 0px 10px;
 }
 
 .side-bottom img{
     width: 20px;
     margin-top: 5px;
     vertical-align: middle;
-    margin-right: 2px;
+    margin: 6px;
+    
 }
 
 .download img{
     width: 15px;
     
+}
+
+.profile img{
+    width: 20px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: rgba(163,163,163,255);
+}
+
+.profile span{
+   font-weight: bold;
 }
 
 .side-bottom span{
