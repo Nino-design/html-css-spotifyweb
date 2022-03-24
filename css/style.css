@@ -11,6 +11,13 @@ html{
 
 a{
     text-decoration: none;
+    color: inherit;
+    opacity: 0.5;
+}
+
+
+a:hover{
+    opacity: 1;
 }
 
 ul li{
@@ -116,11 +123,20 @@ main{
 
 .playlist h3{
     margin-bottom: 5px;
+    opacity: 0.5;
     text-transform: uppercase;
     font-weight: bold;
     color: white;
 }
 
+
+.playlist ul li{
+    opacity: 0.5;
+}
+
+.playlist ul li:hover{
+    opacity: 1;
+}
 
 .playlist-logo{
     margin-bottom: 5px;
@@ -203,6 +219,12 @@ main{
 
 }
 
+.top-bar-button:hover{
+    padding: 0.8em 2em;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
 .top-navbar{
     display: flex;
     justify-content: center;
@@ -233,12 +255,39 @@ main{
     text-align: center;
 }
 
+.image-container{
+    position: relative;
+}
+
 .image-wrapper img{
     width: 100%;
 }
 
+.image-overlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.image-overlay i{
+    font-size: 3em;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-wrapper .image-container:hover .image-overlay{
+    display: block;
+}
+
 .image-wrapper p{
-    margin: 5px 0;
+    margin: 2px 0;
     color: white;
     font-weight: bold;
 }
@@ -272,11 +321,18 @@ footer{
 
 .left-side img{
     width: 35px;
-    margin-right: 10px;
 }
 
-.left-icon{
-    margin-left: 80px;
+
+.album-text{
+    margin-left: -40px;
+}
+
+
+.left-icon a{
+    color: rgba(193,193,193,255);
+    display: inline-block;
+    padding-left: 5px;
 }
 
 
@@ -300,7 +356,7 @@ footer{
 }
 
 .top-central i{
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-right: 20px;
     color: rgba(193,193,193,255);
     
@@ -308,19 +364,29 @@ footer{
 
 
  .top-central .play{
-    font-size: 2em;
+    font-size: 1.5em;
     
 }
 
 .bottom-central{
+    display: flex;
     margin-bottom: 1em;
 }
 
 .progression-bar{
-    border: 3px solid rgba(163,163,163,255);
-    display: inline-block;
     width: 20em;
+    height: 4px;
+    background-color: gray;
+    border-radius: 5px;
     margin: 0 10px;
+}
+
+.internal-bar{
+    width: 4em;
+    height: 100%;
+    background-color: rgba(193,193,193,255);
+    height: 100%;
+    border-radius: 5px;
 }
 
 .right-side{
@@ -336,7 +402,25 @@ footer{
 }
 
 .progression-bar-2{
-    border: 3px solid rgba(163,163,163,255);
-    display: inline-block;
     width: 9em;
+    height: 4px;
+    background-color: gray;
+    border-radius: 5px;
+}
+.internal-bar-2{
+    width: 2em;
+    height: 100%;
+    position: relative;
+    background-color: rgba(193,193,193,255);
+    border-radius: 5px;
+}
+
+.volume-circle{
+    width: 8px;
+    height: 8px;
+    left: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: blue;
+
 }
